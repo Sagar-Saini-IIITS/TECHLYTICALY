@@ -1,5 +1,11 @@
+// THIRD QUESTION
+// Time Complexity : O(n)
+// Space Complexity: O(1)
+
+
 #include <iostream>
 using namespace std;
+
 struct Node{
 int data;
 Node *left;
@@ -11,6 +17,7 @@ Node(int val){
     }
 };
 
+
 // function to calculate min difference
  int findDifference(Node *root, int x){
      if(!root) return 1e9;
@@ -19,7 +26,8 @@ Node(int val){
      int r=findDifference(root->right,x);
      int temp=l<r?l:r;
      return ans<temp?ans:temp;
-     }
+  }
+
 int main()
 {   
    /* Input :
