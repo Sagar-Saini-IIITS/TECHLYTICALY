@@ -1,3 +1,8 @@
+// FIRST QUESTION
+// Time Complexity : O(log n)
+// Space Complexity: O(1) since no extra space used
+
+
 
 #include <iostream>
 using namespace std;
@@ -19,8 +24,10 @@ int findNumber(int *arr, int n){
     }
     return -1;
 }
+
 int main()
-{   cout<<"Enter array size:"<<endl;
+{   
+    cout<<"Enter array size:"<<endl;
     int n; cin>>n;
     int arr[n];
     cout<<"Enter array elements:"<<endl;
