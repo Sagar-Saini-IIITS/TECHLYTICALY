@@ -1,5 +1,11 @@
+// FIRST QUESTION
+// Time Complexity : O(n)
+// Space Complexity: O(1)
+
+
 #include <iostream>
 using namespace std;
+
 struct Node{
 int data;
 Node *next;
@@ -8,6 +14,7 @@ Node(int data){
     this -> next = NULL;
 }
 };
+
 
  // function to  delete alternate nodes
 Node * deleteNode(Node *head){
@@ -21,6 +28,7 @@ Node * deleteNode(Node *head){
     }
     return head;
 }
+
 
 int main()
 {  
@@ -43,8 +51,7 @@ int main()
     while(temp){
         cout<<temp->data<<" ";
         temp=temp->next;
-    }
-    cout<<endl;
+    } cout<<endl;
     
     
     // deleting alternate nodes
